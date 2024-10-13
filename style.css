@@ -3,6 +3,7 @@ h1{
 }
 
 p{
+    position:right;
     height: 300px;
     width: 300px;
     overflow-x: scroll;
