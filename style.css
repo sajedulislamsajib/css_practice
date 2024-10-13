@@ -3,6 +3,9 @@ h1{
 }
 
 p{
-    color: green;
-    font-size: 70px;
+    height: 300px;
+    width: 300px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+
 }
