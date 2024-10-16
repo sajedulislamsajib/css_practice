@@ -64,8 +64,7 @@
         {
             document.write(person[item]+"<br>");
         }
-             */
-
+             
 
         //var Title="Learn With Rabbil";
         //var TitleArray=Array.from(Title);
@@ -74,6 +73,12 @@
        var result= numArray.filter(function(item){
             return item>50
         });
+        document.write(result);
+        */
+        var numArray=[30,32,40,55,60,80,90];
+        var result= numArray.findIndex(function(value){
+            return value<80 
+        })
         document.write(result);
     </script>
 </body>
