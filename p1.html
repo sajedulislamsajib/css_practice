@@ -74,12 +74,24 @@
             return item>50
         });
         document.write(result);
-        */
+        
         var numArray=[30,32,40,55,60,80,90];
         var result= numArray.findIndex(function(value){
             return value<80 
         })
         document.write(result);
+        
+        var numArray=[30,32,40,55,60,80,90];
+        numArray.forEach(function(item){
+        document.write(item+"<br>");
+      }
+      )
+        */
+        //includes method-kono elements kono array te ache kina
+        var numArray=[30,32,40,55,60,80,90];
+        var result = numArray.includes(80);
+        document.write(result);
+
     </script>
 </body>
 </html> 
