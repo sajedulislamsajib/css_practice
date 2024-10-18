@@ -10,14 +10,13 @@
 
 
 <body>
-   <h1 class="MyClass">   </h1>
-  <h6 class="MyClass"></h6>
-  <button class="MyClass"></button>
+    <p></p>
+    <button onclick="Demo()">Click</button>
     <script>
-       
-        var MyElements = document.getElementsByClassName('MyClass');
-        MyElements[0].innerHTML="EID MUBARAK";
-
+       function Demo(){
+        var info=document.title;
+        document.getElementsByTagName('p')[0].innerHTML=info;
+       }
     </script>
 </body>
 </html> 
