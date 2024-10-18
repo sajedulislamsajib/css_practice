@@ -10,6 +10,13 @@
 
 
 <body>
+    <input onchange="MyEvent('change hoyeche')"/> <br>
+
+    <button onclick="MyEvent('click hoyeche')">Click</button>
+    <button onmouseover="MyEvent('mouse over hoyeche')">Click</button>
+    <button onmouseout="MyEvent('mouse out hoyeche')">Click</button>
+    <button onchange="MyEvent('mouse change hoyeche')">Click</button>
+    <button onmouseout="MyEvent('mouse out hoyeche')">Click</button>
   
     <script>
        
@@ -204,7 +211,7 @@
         document.write(language+"<br>")
 
         document.write(userAgent+"<br>")
-*/
+
 navigator.geolocation.getCurrentPosition(function(position){
             
     let altitude = position.coords.altitude;
@@ -219,11 +226,12 @@ navigator.geolocation.getCurrentPosition(function(position){
     document.write("longitude: "+longitude+"<br>");
 
     document.write("speed: "+speed+"<br>");
-
-
    
  })
-
+*/
+        function MyEvent(msg){
+            console.log(msg)
+        }
       
 
 
