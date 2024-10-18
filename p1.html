@@ -14,10 +14,10 @@
     <button onclick="Demo()">Click</button>
         <script>
       function Demo(){
-        document.open('text/html','replace');
-        document.write("<h2>AMAR NAME<h2>")
-        document.close();
-    
+       let w= window.open();
+       w.document.open();
+       w.document.write("Hello New Window");
+       w.document.close();
     }
     
     </script>
