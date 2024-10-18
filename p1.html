@@ -13,19 +13,20 @@
 
 <body></body>
     
-    <h1 id="MyId" class="">Bangladesh</h1>
-
-    <button onclick="AddStyle()">Add Style</button>
-    <button onclick="RemoveStyle()">Remove Style</button>
+    <ul id="MyItems"></ul><br><br>
+    <input id="MyInput"><br><br> 
+    <button onclick="AddItem()">Add</button>
 
     <script>
-        function AddStyle(){
-            let H1Tag=document.getElementById('MyId')
-            H1Tag.classList.add('text-primary')
-        }
-        function RemoveStyle(){
-            let H1Tag=document.getElementById('MyId')
-            H1Tag.classList.remove('text-primary')
+        function AddItem()
+        {
+           var itemValue= document.getElementById('MyInput').value;
+            
+            var listItem=document.createElement('li');
+            listItem.innerHTML=itemValue;
+            
+            var MyItems = document.getElementById('MyItems')
+            MyItems.appendChild(listItem)
         }
     
     </script>
