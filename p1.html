@@ -10,14 +10,22 @@
 
 
 <body></body>
-    <p></p>
-    <button onclick="Demo()">Click</button>
-        <script>
-      function Demo(){
-       let w= window.open();
-       w.document.open();
-       w.document.write("Hello New Window");
-       w.document.close();
+    
+    <input id="num1"><br><br>
+    <input id="num2"><br><br>
+    <button onclick="AddTwoNumber()">Add</button>
+    
+
+
+
+<script>
+      function AddTwoNumber(){
+     let num1= document.getElementById('num1').value;
+     let num2= document.getElementById('num2').value;
+    
+     let result= parseFloat(num1)+parseFloat(num2);
+     alert(result);
+      
     }
     
     </script>
