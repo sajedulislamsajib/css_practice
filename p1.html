@@ -9,14 +9,17 @@
 
 
 
-<body>
+<body></body>
     <p></p>
     <button onclick="Demo()">Click</button>
-    <script>
-       function Demo(){
-        var info=document.title;
-        document.getElementsByTagName('p')[0].innerHTML=info;
-       }
+        <script>
+      function Demo(){
+        document.open('text/html','replace');
+        document.write("<h2>AMAR NAME<h2>")
+        document.close();
+    
+    }
+    
     </script>
 </body>
 </html> 
